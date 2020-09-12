@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://use.fontawesome.com/d8f94f37e4.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <h1>Weather App</h1>
+      <div class="search">
+        <input type="text" id="searchBar" placeholder="search city...">
+        <button type="submit" class="searchBtn"><i class="fa fa-search"></i></button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class ="errorNotification"></div>
+      <div class="wrapper">
+        <div class="location">
+          <p></p>
+        </div>
+        <div class="date">
+          <p></p>
+        </div>
+        <div class="current-temp">
+          <div class="weather-icon">
+            <img src="icons/unknown.png" alt="">
+          </div>
+          <div class="temp-content">
+            <div class="temp-value">
+              <p><span>°C</span></p>
+            </div>
+            <div class="temp-description">
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="current-report">
+          <div>
+            <div class="max-temp"> <p><span>°C</span></p>
+            </div>
+            <div class="max-label">Max</div>
+            <div class="min-temp">
+               <p><span>°C</span></p>
+            </div>
+            <div class="min-label">Min</div>
+          </div>
+          <div>
+            <div class="wind"></div>
+            <div class="wind-label">Wind</div>
+            <div class="humidity"></div>
+            <div class="humidity-label">Humidity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

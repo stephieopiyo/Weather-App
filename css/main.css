@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  background: linear-gradient(#49a9fc, #025299);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+nav h1 {
+  text-align: center;
+  font-size: 35px;
+  margin: 20px;
+}
+
+.search {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.search input {
+  padding: 10px 20px;
+  border: none;
+  outline: 0;
+  border-radius: 20px;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  padding: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.search button i {
+  color: #49a9fc;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.errorNotification {
+  display: none;
+  background-color: #f8d7da;
+}
+
+.current-temp{
+  display: flex;
+  margin-top: 0.25em;
+  width: 100%;
+}
+
+.current-temp .weather-icon{
+  flex-grow: 1.25;
+  text-align: center;
+}
+
+.weather-icon{
+  width: 10.5em;
+}
+
+.current-temp .temp-content{
+  flex-grow: 1;
+  text-align: center;
+  
+}
+
+.temp-value p {
+  font-size: 3em;
+  text-align: center;
+  cursor: pointer;
+  text-shadow: 3px 2px #424242;
+}
+
+.temp-description{
+  margin-top: -0.5em;
+  margin-left: -0.6em;
+  text-align: center;
+  font-size: 1.125em;
+}
+
+.date {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.0em;
+}
+
+.location {
+  padding: 20px 20px 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.current-report{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  .search {
+  text-align: right;
+  margin: 20px;
+  }
+
+.search input {
+  padding: 12px 20px;
+  width: 30vw;
+  border: none;
+  outline: 0;
+  border-radius: 20px;
+}
+
+
+.search button i{
+  font-size: 18px;
+}
+
+body {
+  margin: 20px;
+}
+
+.current-report{
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid rgba(255, 255, 255,0.5);
+}
+
+
+ }
+ 
+@media only screen and (min-width: 996px)
+{
+ .wrapper{
+    width: 880px;
+    margin: 8px auto;
+    font-size: 1.1em;
+ }
+}
