@@ -52,7 +52,7 @@ window.addEventListener("load", function(e){
   }
 
   function getWeather(latitude, longitude){
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
   
     fetch(api)
     .then(function(response){
@@ -84,7 +84,7 @@ window.addEventListener("load", function(e){
 
  searchBtn.addEventListener('click', function getCity(e){
     e.preventDefault();
-    let url= `http://api.openweathermap.org/data/2.5/weather?q=${search.value}&appid=${key}`;
+    let url= `https://api.openweathermap.org/data/2.5/weather?q=${search.value}&appid=${key}`;
 
     fetch(url)
       .then(function(response){
