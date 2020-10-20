@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(#49a9fc, #025299);
   background-repeat: no-repeat;
   color: #fff;
@@ -65,19 +65,19 @@ nav h1 {
   text-align: center;
 }
 
-.weather-icon{
-  width: 10.5em;
-}
-
 .current-temp .temp-content{
   flex-grow: 1;
   text-align: center;
   
 }
 
-.temp-value p {
-  font-size: 3em;
-  text-align: center;
+.weather-icon{
+  font-size: 10.5em;
+}
+
+.temp-value {
+  font-size: 5.25em;
+  font-weight: 300;
   cursor: pointer;
   text-shadow: 3px 2px #424242;
 }
@@ -101,6 +101,7 @@ nav h1 {
   font-size: 1.2em;
 }
 
+
 .current-report{
   display: flex;
   justify-content: space-around;
@@ -111,6 +112,9 @@ nav h1 {
 }
 
 @media only screen and (min-width: 700px) {
+  body{
+    margin: 20px;
+  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -152,14 +156,26 @@ body {
   border-left: 1px solid rgba(255, 255, 255,0.5);
 }
 
+.current-temp, .current-report{
+  width: 50%;
+}
+.current-report .max-temp,
+.current-report .min-temp,
+.current-report .wind,
+.current-report .humidity,
+.current-report .sunrise,
+.current-report .sunset {
+  margin-top: 1.0em;
+  font-size: 1.45em;
+}
 
  }
  
 @media only screen and (min-width: 996px)
 {
  .wrapper{
-    width: 880px;
+    width: 100%;
     margin: 8px auto;
-    font-size: 1.1em;
+    font-size: 1.5em;
  }
 }

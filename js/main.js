@@ -77,8 +77,8 @@ window.addEventListener("load", function(e){
     localDate.textContent = dateBuilder(dt);
     maxTemp.innerHTML = Math.floor(main.temp_max-kelvin) + '<span>°C</span>';
     minTemp.innerHTML = Math.floor(main.temp_min-kelvin) + '<span>°C</span>';
-    windElem.textContent = wind.speed;
-    humidityElem.textContent = main.humidity;
+    windElem.textContent =`${wind.speed} mph`;
+    humidityElem.textContent = `${main.humidity} %`;
   }
 
 
@@ -114,11 +114,10 @@ function dateBuilder(dt){
   return `${day}, ${dateNumber}, ${month}, ${year}`;
 }
 
-function saveToLocalStorage(){
-  if (typeof(Storage) !== "undefined") {
-    localStorage.setItem('weatherInfo', JSON.stringify(data));
-    } else {
-    alert('No web storage support');
+/*function convertToFahrenheit(temp){
+  return (temp * 9/5) + 32;
 }
+tempElement.addEventListener('click', function(e){
+   
+});*/
 
-}
